@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery List</title>
+</head>
+<body>
+  <h1>Grocery List</h1>
+  <ul>
+    <!-- Use JavaScript to display the grocery items from the groceries array -->
+    <script type="module">
+      import { groceries } from './grocery.ts';
+
+      groceries.forEach((item) => {
+        document.write(`<li>${item.quantity} ${item.name}</li>`);
+      });
+    </script>
+  </ul>
+</body>
+</html>
